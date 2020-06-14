@@ -1,13 +1,13 @@
-String basePath = 'devops'
+String jobFolder = 'devops'
 String jobName = 'Devops_1'
-
+String jobDescription = 'This is a sample job'
 String repo = 'sheehan/gradle-example'
 
-folder(basePath) {
-    description 'This example shows basic folder/job creation.'
+folder(jobFolder) {
+    description jobDescription
 }
 
-job("$basePath/$jobName") {
+job("$jobFolder/$jobName") {
     scm {
         github repo
     }
