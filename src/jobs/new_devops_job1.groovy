@@ -3,7 +3,7 @@ String jobName = 'Devops_1'
 String jobDescription = 'This is a sample job'
 String repo = 'sheehan/gradle-example'
 
-folder(jobFolder) {
+folder(jobFolder) {{
     description jobDescription
 }
 
